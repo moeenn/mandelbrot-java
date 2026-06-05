@@ -1,4 +1,4 @@
-## sandbox
+## Mandelbrot Plot (Java implementation)
 
 ### Commands
 
@@ -10,5 +10,5 @@ $ gradle run
 $ gradle build
 
 # run jar.
-$ java -jar ./build/libs/sandbox-0.0.1.jar
+$ java -jar ./build/libs/mandelbrot-0.0.1.jar
 ```

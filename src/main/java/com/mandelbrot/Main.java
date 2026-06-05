@@ -1,4 +1,4 @@
-package com.sandbox;
+package com.mandelbrot;
 
 import javax.imageio.ImageIO;
 import java.awt.Color;

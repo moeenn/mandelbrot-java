@@ -4,7 +4,7 @@ plugins {
 }
 
 application {
-    mainClass = 'com.sandbox.Main'
+    mainClass = 'com.mandelbrot.Main'
 }
 
 repositories {
@@ -13,13 +13,13 @@ repositories {
 
 jar {
     archiveVersion =  '0.0.1'
-    archiveBaseName = 'com.sandbox'
+    archiveBaseName = 'com.mandelbrot'
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     exclude 'META-INF/LICENSE'
     exclude 'META-INF/NOTICE'
 
     manifest {
-        attributes['Main-Class'] = 'com.sandbox.Main'
+        attributes['Main-Class'] = 'com.mandelbrot.Main'
     }
 
     from {

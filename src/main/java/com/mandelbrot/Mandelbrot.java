@@ -1,4 +1,4 @@
-package com.sandbox;
+package com.mandelbrot;
 
 import java.awt.Color;
 import java.awt.Graphics2D;

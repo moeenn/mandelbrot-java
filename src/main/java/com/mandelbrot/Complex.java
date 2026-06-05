@@ -1,4 +1,4 @@
-package com.sandbox;
+package com.mandelbrot;
 
 public class Complex {
     public final double real;
