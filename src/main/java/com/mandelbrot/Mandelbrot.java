@@ -18,14 +18,16 @@ public class Mandelbrot {
         graphics.setColor(Color.WHITE);
         graphics.fillRect(0, 0, width, height);
 
+        double im, re;
+        Complex z, c;
+
         for (int y = 0; y < height; ++y) {
-            double im = (y - (height / 2.f)) / height * 2.5f;
+            im = (y - (height / 2.f)) / height * 2.5f;
 
             for (int x = 0; x < width; ++x) {
-
-                double re = ((x - (width / 2.f)) / width * 2.5f) - 0.5f;
-                Complex z = new Complex(re, im);
-                Complex c = z;
+                re = ((x - (width / 2.f)) / width * 2.5f) - 0.5f;
+                z = new Complex(re, im);
+                c = z;
 
                 for (int i = 0; i < maxIter; ++i) {
                     z = z.multiply(z).add(c);
