@@ -11,7 +11,7 @@ public class Main {
         int width = 5_000;
         var filename = String.format("plot_%dx%d.png", width, height);
 
-        BufferedImage image = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
+        var image = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
         Graphics2D graphics = image.createGraphics();
 
         var mandelbrot = new Mandelbrot(width, height, 50);
