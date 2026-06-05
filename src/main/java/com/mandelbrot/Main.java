@@ -1,7 +1,6 @@
 package com.mandelbrot;
 
 import javax.imageio.ImageIO;
-import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -15,10 +14,7 @@ public class Main {
         BufferedImage image = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
         Graphics2D graphics = image.createGraphics();
 
-        graphics.setColor(Color.WHITE);
-        graphics.fillRect(0, 0, width, height);
-
-        var mandelbrot = new Mandelbrot(width, height, 255);
+        var mandelbrot = new Mandelbrot(width, height, 50);
         mandelbrot.plot(graphics);
 
         graphics.dispose();

@@ -15,6 +15,9 @@ public class Mandelbrot {
     }
 
     public void plot(Graphics2D graphics) {
+        graphics.setColor(Color.WHITE);
+        graphics.fillRect(0, 0, width, height);
+
         for (int y = 0; y < height; ++y) {
             double im = (y - (height / 2.f)) / height * 2.5f;
 
