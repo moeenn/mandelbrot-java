@@ -31,6 +31,6 @@ public class Main {
         }
 
         long elapsed = (System.currentTimeMillis() - start);
-        System.out.printf("%10s | %d seconds\n", "elapsed", elapsed);
+        System.out.printf("%10s | %d ms\n", "elapsed", elapsed);
     }
 }
